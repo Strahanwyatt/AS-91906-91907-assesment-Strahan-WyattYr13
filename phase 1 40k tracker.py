@@ -24,6 +24,6 @@ leave = tk.Button(root, text="quit", command=quit)
 leave.grid(column=1, row=2)
 
 
-root.mainloop()
+root.mainloop() d
 
 
