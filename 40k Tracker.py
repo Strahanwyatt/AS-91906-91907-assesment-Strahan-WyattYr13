@@ -11,7 +11,7 @@ class WidgetsExample(GridLayout): #blueprint
         self.count = count
         self.my_text = my_text
 
-        StringProperty("VICTORY POINTS")
+        StringProperty("VICTORY POINTS"  )
 
 
 
