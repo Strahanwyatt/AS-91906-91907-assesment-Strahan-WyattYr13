@@ -6,11 +6,27 @@ from kivy.uix.gridlayout import GridLayout
 from kivy.uix.widget import Widget
 from kivy.uix.button import Button
 
-class WidgetsExample(GridLayout):
-    my_text = StringProperty("poop")
-    def on_button_click(self):
-        print("Button clicked")
-        self.my_text = "you shat yourself"
+class WidgetsExample(GridLayout): #blueprint
+    def __init__(self, count, my_text):
+        self.count = count
+        self.my_text = my_text
+
+        StringProperty("VICTORY POINTS")
+
+
+
+    def on_button_click(self): # button
+        print("button clicked")
+        self.count += 1
+        self.my_text = str(self.count )
+
+
+
+
+
+    "button.config"
+    "self.my_text = str(self.count VP."
+    "self.count += 1"
 
 
 class BoxLayoutExample(BoxLayout):
