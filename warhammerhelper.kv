@@ -1,62 +1,18 @@
-WidgetsExample:
+VPcounter:
 
-<WidgetsExample@GridLayout>:
+<VPcounter@GridLayout>:
     cols: 3
+    size_hint: 0.5,0.5
     Button:
-        text: "click"
-        on_press: root.on_button_click()
+        text: "+1"
+        size_hint: 0.25 , 0.25
+        on
+    Button:
+        text: "-1"
+        size_hint: 0.25 , 0.25
+        on button press
     Label:
-        text: root.my_text
+        text: "Victory points "
+        size_hint: 0.5 ,0.5
 
 
-<pageLayoutExample@PageLayout>:
-    BoxLayoutExample:
-    MainWidget:
-
-<GridLayoutExample@Gridlayout>:
-    cols: 3
-    Button:
-        text: "A"
-        size_hint: .5, 1         #.5 is the horizontal width 1 is the vertical
-    Button:
-        text: "b"
-
-
-
-
-<BoxLayoutExample>:
-    orientation: "vertical"
-    Button:
-        text: "A"
-        size_hint: .5, None
-        # size: "100dp","80dp"
-        # width "100dp"
-        # height: "60dp"
-        # x, center_x, right
-        # y, center_y, top
-
-        pos_hint: { "right": .5    }
-
-
-    BoxLayout:
-        orientation: "vertical"
-        Button:
-            text: "B1"
-        Button:
-            text: "B2"
-
-    Label:
-        text: "C"
-
-
-<MainWidget>:
-    Button:
-        text: "hello"
-        size: "100dp","80dp"
-        pos: "100dp", "200dp"
-        color: 0, 0, 1, 1
-    Label:
-        text: "Hello2"
-        size: "100dp","80dp"
-        pos: "200dp", "300dp"
-        color: 1, 0, 0, 1
