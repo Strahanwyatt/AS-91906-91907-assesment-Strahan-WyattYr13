@@ -10,15 +10,22 @@ from kivy.core.audio import SoundLoader
 class GridLayoutExample(GridLayout):
     pass
 
+labelnumber = 1
+
 
 
 class VPcounter(GridLayout):
-    labelnumber = 1
-    vp_text = StringProperty(" Victory points" "1")
+    def __init__(self,**kwargs):
+        super(VPcounter,self).__init__(**kwargs)
 
-    self.plusone_button = Button(text = +1)
+        self.labelnumber = 1
+        self.vp_text = StringProperty(" Victory points" "1")
 
-    self
+        self.plusone_button = Button(text = "+1", col = 3 , size_hint = (0.25, 0.25), on_press = self.on_Button_click1 )
+        self.minusone_button = Button(text ="-1")
+
+        self.add_widget(self.)
+        self.add_widget(self.on_Button_click1)
 
     def on_Button_click1(self):
         print("blood for the blood god")
@@ -32,6 +39,12 @@ class VPcounter(GridLayout):
         self.vp_text = str(self.labelnumber)
 
 
+class app1(App):
+    def build(self):
+        return VPcounter()
+
+if __name__ =="__main__":
+    app1().run()
 
 class Mainwidget(Widget):
     pass
