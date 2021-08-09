@@ -1,34 +1,34 @@
-import tkinter
+import tkinter as tk
 from tkinter import *
-TK = Tk()
-TK.title('Warhammer companion app')
-TK.geometry('500x500')
-
+Root = Tk()
+Root.title('Warhammer companion app')
+Root.geometry('500x500')
+var = StringVar()
 
 class VPCounter:
-    def __init__ (self, VP):
+    def __init__(self, VP):
         self.VP = VP
 
-
-
-        self.add1_button = Button(VP,"+1")
+        self.add1_button = Button(VP,"+1", command=self.Plus1)
         self.add1_button.pack()
 
-        self.minus1_button = Button(VP,COMMAND
+        self.minus1_button = Button(VP,"-1", command=self.Minus1)
         self.minus1_button.pack()
 
-        def -1(self):
+    def Minus1(self):
             print("-1")
 
-        def +1(self):
+    def Plus1 (self):
             print("-1")
 
 
-TK.mainloop()
+git hub and classes 
+
+Root.mainloop()
 
 
 
-    """
+"""    
 
 
 
@@ -55,7 +55,9 @@ class MyFirstGUI:
 
 root = Tk()
 my_gui = MyFirstGUI(root)
-root.mainloop()"""
+root.mainloop() 
+
+"""
 
 
 
