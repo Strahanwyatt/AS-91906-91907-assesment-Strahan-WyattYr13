@@ -22,7 +22,6 @@ class VPCounter:
             print("-1")
 
 
-git hub and classes 
 
 Root.mainloop()
 
